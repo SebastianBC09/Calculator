@@ -1,9 +1,25 @@
 const express = require('express')
+/* const bodyParser = require('body-parser') */
+
 const app = express ()
 const port = 3000
 
+/* app.use(bodyParser.urlencoded({extended}))
+Body Parser is now depricated. You can get the same info just using express. */
+
+app.use(express.urlencoded({}))
+
 app.get("/", function(req, res){
-  res.send("<h1>Hello World!🧡</h1>")
+  res.sendFile(__dirname + "/index.html")
+})
+
+app.post("/", function(req, res){
+  var num1 = Number(req.body.num1)
+  var num2 = Number(req.body.num2)
+  
+  var result = num1 + num2
+
+  res.send("The result of the calculation is: " + result)
 })
 
 app.listen(port, function(){
