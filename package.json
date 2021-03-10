@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "This is my first web app using node.js, express.js & nodemon.",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianBC09/Calculator.git"
+  },
+  "author": "Sebastian Ballen C.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianBC09/Calculator/issues"
+  },
+  "homepage": "https://github.com/SebastianBC09/Calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
